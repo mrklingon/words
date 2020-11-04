@@ -84,6 +84,20 @@ let Kvowel = ""
 let Kconst = ""
 let lang = 0
 let langs: string[] = []
+images.createBigImage(`
+    # . # . . . . # . .
+    . # . . . # . . # .
+    . # . # . . . . . #
+    . . . . # . . . # .
+    . . . . # . . # . .
+    `).scrollImage(1, 200)
+images.createBigImage(`
+    # . # . . . . . . .
+    . # . . . . . . . .
+    . # . # . . . . . .
+    . . . . # . . . . .
+    . . . . # . . . . .
+    `).scrollImage(1, 200)
 langs = ["K", "E", "R", "V", "W", "M"]
 lang = 0
 Kconst = "bcDgHjlmnpqQStvwy'''"
