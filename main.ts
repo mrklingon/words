@@ -15,8 +15,8 @@ function Make_Word (Rule: string, Cons: string, Vows: string) {
         } else {
             NewWord = "" + NewWord + vowel(Vows)
         }
-        return NewWord
     }
+    return NewWord
 }
 input.onButtonPressed(Button.B, function () {
     basic.showString("" + (Make_Word(Krule(), Kconst, Kvowel)))
