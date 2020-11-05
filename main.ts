@@ -35,7 +35,7 @@ function vrule () {
     return vulr[randint(0, vulr.length - 1)]
 }
 input.onButtonPressed(Button.AB, function () {
-    basic.showString("" + (NewWord))
+    basic.showString(NewWord)
 })
 input.onButtonPressed(Button.B, function () {
     if (0 == lang) {
