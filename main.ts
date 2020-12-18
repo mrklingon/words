@@ -22,6 +22,7 @@ function consonant (text: string) {
     return text.charAt(randint(0, text.length - 1))
 }
 input.onButtonPressed(Button.A, function () {
+    music.playTone(131, music.beat(BeatFraction.Whole))
     lang += 1
     if (lang > 5) {
         lang = 0
@@ -36,8 +37,10 @@ function vrule () {
 }
 input.onButtonPressed(Button.AB, function () {
     basic.showString(NewWord)
+    music.playTone(523, music.beat(BeatFraction.Whole))
 })
 input.onButtonPressed(Button.B, function () {
+    music.playTone(262, music.beat(BeatFraction.Whole))
     if (0 == lang) {
         basic.showString("" + (Make_Word(Krule(), Kconst, Kvowel)))
     }
